@@ -104,10 +104,10 @@ int main(int argc, char *argv[])
             printf("\nClosing current connection with Client\n");
             i = 0;
             printf("\n--------------------------------------\n");
+            exit(0);
         }
         else
         {
-            wait(NULL);
             printf("\nThis is under the parent process!\n");
             close(newSd);
             printf("\nClosing current connection with Client\n");
